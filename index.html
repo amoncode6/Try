@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deploy BMB-XMD to Heroku</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #6762A6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #4d4788;
+    }
+    img {
+      width: 200px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Deploy BMB-XMD to Heroku</h1>
+
+  <!-- Deploy Button Image -->
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/bmbxmd/B.M.B-XMD" target="_blank">
+    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
+  </a>
+
+  <br><br>
+
+  <!-- Deploy Now Button -->
+  <button onclick="deployToHeroku()">Deploy Now</button>
+
+  <script>
+    function deployToHeroku() {
+      window.open('https://dashboard.heroku.com/new?template=https://github.com/bmbxmd/B.M.B-XMD', '_blank');
+    }
+  </script>
+
+</body>
+</html>
